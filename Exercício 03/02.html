@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout A</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .topo, .rodape {
+            background-color: lime;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .menu {
+            background-color: blue;
+            text-align: center;
+            color: black;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .conteudo {
+            background-color: cyan;
+            flex-grow: 1;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">TOPO</div>
+        <div class="menu">MENU</div>
+        <div class="conteudo">CONTEÚDO</div>
+        <div class="rodape">RODAPÉ</div>
+    </div>
+</body>
+</html>
