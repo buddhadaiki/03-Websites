@@ -1,7 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+    
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f1a94e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.header2 {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.menu-item {
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 100px);
+    background-color: #e6e6e6;
+}
+
+.content {
+    position: relative;
+    top: 50px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: calc(100% - 100px);
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #d9d9d9;
+}
+    </style>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout com CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -9,62 +77,17 @@
     <div class="header">
         <div class="logo"></div>
         <div class="header2"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
         </div>
     </div>
 
     <div class="sidebar"></div>
+
+    <div class="content"></div>
+
+    <div class="footer"></div>
 </body>
 </html>
-
-
-<style>
-
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0; 
-        width: 100%;
-        height: 50px;
-        background-color: #f1a94e;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        width: 35px;
-        height: 30px;
-        background-color: #fff;
-        margin-left: 15px;
-        margin-bottom: 5px;
-        padding: 5px
-    }
-
-    .header2 {
-        display:flex;
-        gap: 10px;
-        margin-right: 10px;
-    }
-
-    .item{
-        width: 50px;
-        height: 30px;
-        background-color: #fff;
-
-    }
-
-    .sidebar{
-        position: fixed;
-        top: 50px;
-        left: 0;
-        width: 200px;
-        height: calc(100% - 100px);
-        background-color: #e6e6e6;
-    }
-
-
-</style>
