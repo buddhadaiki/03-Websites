@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout A</title>
+    <title>Layout B</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
+
+        .centro {
+            display: grid;
+            place-items: center;
+        }
         .container {
             display: flex;
             flex-direction: column;
             height: 100vh;
+            font-weight: bold;
         }
         .topo, .rodape {
             background-color: lime;
             text-align: center;
             padding: 10px;
             font-weight: bold;
+            justify-content: center;
         }
-        .menu {
+        .conteudo-container {
+            display: flex;
+            flex-grow: 1;
+        }
+        .lateral-esquerda {
             background-color: blue;
-            text-align: center;
+            width: 150px;
             color: black;
+            display: flex;
+            align-items: center;
+            text-align: center;
             padding: 10px;
-            font-weight: bold;
         }
         .conteudo {
             background-color: cyan;
             flex-grow: 1;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <div class="centro"></div>
     <div class="container">
         <div class="topo">TOPO</div>
-        <div class="menu">MENU</div>
-        <div class="conteudo">CONTEÚDO</div>
+        <div class="conteudo-container">
+            <div class="lateral-esquerda">LATERAL ESQUERDA</div>
+            <div class="conteudo">CONTEÚDO</div>
+        </div>
         <div class="rodape">RODAPÉ</div>
     </div>
 </body>
