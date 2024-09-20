@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens com Float</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .galeria {
+            width: 280px;
+            overflow: auto;
+        }
+        .galeria img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            float: left;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="galeria">
+        <img src="https://i.imgur.com/I1dgg6F.jpeg">
+        <img src="https://i.imgur.com/PmLonGm.jpeg">
+        <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <img src="https://socientifica.com.br/wp-content/uploads/2022/05/pantera-negra.jpg">
+        <img src="https://cdn.pixabay.com/photo/2023/01/01/13/32/panther-7690092_640.jpg">
+        <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/06/gatos-selvagens.jpg">
+        <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/03/29/1527502278-golden-retriever.jpg">
+        <img src="https://www.pedigree.com.br/cdn-cgi/image/format=auto,q=90/sites/g/files/fnmzdf2401/files/2022-04/hero-icon-Savannah_0.png">
+    </div>
+</body>
+</html>
