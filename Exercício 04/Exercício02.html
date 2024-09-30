@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Horizontal</title>
     <link rel="stylesheet" href="style.css">
 
@@ -16,25 +16,33 @@
                 display:flex;
                 flex-direction:column;
                 align-items:center;
-                justify-content:center;
+                justify-content: center;
                 height: 100vh;
                 overflow:hidden
-            }
-            .Linha{
-                display:flex;
-                justify-content: center;
-                margin: 10px
             }
             .item{
                 background-color: rgba(255, 255, 255, 0.204);
                 color:white;
                 padding: 20px 30px;
-                margin: 5px 0;
-                width: 200px;
+                margin: 5px;
                 text-align: center;
                 border: 2px solid;
                 border-radius: 5px;
-                font-size: 15px;
+                font-size: 15px;   
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .Linha{
+                display:flex;
+                justify-content: center;
+                margin: 10px;
+                width: 100%
+            }
+            .Linha2.item{
+                flex-grow: 2;
+                width: 50%;
             }
 
 
@@ -44,14 +52,16 @@
 
 <body>
     <div class="Menu">
-        <a class="item">Início</a>
-        <a class="item">Quem Somos</a>
-        <a class="item">Trabalhos</a>
-        <a class="item">Hobbies</a>
-    </div>
-    <div class="Linha">
-        <a class="item">Experimentos</a>
-        <a class="item">Contato</a>
+        <div class="Linha">
+            <a class="item">Início</a>
+            <a class="item">Quem Somos</a>
+            <a class="item">Trabalhos</a>
+            <a class="item">Hobbies</a>
+        </div>
+        <div class="Linha2.item">
+            <a class="item">Experimentos</a>
+            <a class="item">Contato</a>
+        </div>
     </div>
 </body>
 </html>
