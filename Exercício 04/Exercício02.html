@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Menu Horizontal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+            body{
+            margin: 0;
+            padding: 0;
+            background-color: orangered;
+            }
+            .Menu{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                height: 100vh;
+                overflow:hidden
+            }
+            .Linha{
+                display:flex;
+                justify-content: center;
+                margin: 10px
+            }
+            .item{
+                background-color: rgba(255, 255, 255, 0.204);
+                color:white;
+                padding: 20px 30px;
+                margin: 5px 0;
+                width: 200px;
+                text-align: center;
+                border: 2px solid;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="Menu">
+        <a class="item">Início</a>
+        <a class="item">Quem Somos</a>
+        <a class="item">Trabalhos</a>
+        <a class="item">Hobbies</a>
+    </div>
+    <div class="Linha">
+        <a class="item">Experimentos</a>
+        <a class="item">Contato</a>
+    </div>
+</body>
+</html>
