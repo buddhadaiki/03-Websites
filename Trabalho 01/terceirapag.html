@@ -5,6 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Preço</title>
     <link rel="stylesheet" href="styles.css">
+
+
+<style>
+    * {
+        margin 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .seção-preço {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icones {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .icone {
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icone img {
+        width: 60%;
+    }
+
+    .tabela-preco  {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border: 150px;
+        border-top: 10px;
+        border-color: white;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .tabela-preco h2 {
+        border-top: 5px;
+        border-color: white;
+        word-spacing: 5px;
+        letter-spacing: 15px;
+        font-size: 2.0em;
+        margin-bottom: 20px;
+    }
+
+    table {
+        border: 10px;
+        border-color: white;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    td:nth-child(odd){
+        font-weight: bold;
+    }
+
+    table tr:first-child td {
+        border-top: none;
+    }
+
+</style>
+
 </head>
 <body>
     <section class="seção-preço">
@@ -13,7 +100,7 @@
             <div class="icone"><img src= "tesoura.png"></div>
             <div class="icone"><img src= "cabeça.png"></div>
         </div>
-        <div class="tabela-preço">
+        <div class="tabela-preco">
             <h2>Tabela de Preços</h2>
             <table>
                 <tr>
