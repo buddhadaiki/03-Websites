@@ -14,6 +14,7 @@
         }
 
         body {
+            font-family: Arial, Helvetica, sans-serif;
             background-color: black;
             color: white;
         }
@@ -37,14 +38,24 @@
 
     nav a {
         color: white;
+        text-decoration: none;
     }
 
     .login {
-        background-color: orange;
+        background-color: rgb(255, 98, 0);
         color: white;
         border: none;
         padding: 5px 10px;
+        border-radius: 20px;
     }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
 
     .hero-text {
         display: flex;
@@ -54,15 +65,17 @@
     }
 
     .hero p {
-        line-height: 2;
+        line-height: 1.5;
     }
 
     .botao-agendar {
-        background-color: orange;
+        background-color: rgb(255, 98, 0);
         color: white;
         border: none;
         padding: 10px 20px;
         cursor: pointer;
+        font-size: 1em;
+        border-radius: 20px;
     }
     .exemplo1 img {
         width: 100%;
@@ -85,17 +98,19 @@
     }
 
     .g-item01 img {
-        width: 100%;
+        width: 80%;
         border-radius: 10px;
     }
 
-    .g-item01.highlight {
+
+    .g-item01.highlight img {
         border: 3px solid orange;
         padding: 7px;
+        width: 100%;
     }
 
     .g-item01:hover {
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
 
     </style>
@@ -116,30 +131,30 @@
             <button class="login">LOGIN</button>
         </nav>
     </header>
-<main>
 
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Barbearia Teste</h1>
-            <p>O que temos que ter sempre em mente é que a crescente influência da mídia desafia a capacidade de equalização das condições inegavelmente apropriadas.</p>
-            <button class="botao-agendar">AGENDAR</button>
-        </div>
-        <div class="exemplo1">
-            <img src="Corte.jpg.png">
-        </div>        
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Barbearia Teste</h1>
+                <p>O que temos que ter sempre em mente é que a crescente influência da mídia desafia a capacidade de equalização das condições inegavelmente apropriadas.</p>
+                <button class="botao-agendar">AGENDAR</button>
+            </div>
+            <div class="exemplo1">
+                <img src="Corte.jpg.png">
+            </div>        
+        </section>
 
-    <section class="galeria">
-        <div class="g-item01">
-            <img src="corte01.png">
-        </div>        
-        <div class="g-item01 highlight">
-            <img src="corte02.png">
-        </div>
-        <div class="g-item01">
-            <img src="corte03.png">
-        </div>     
-    </section>
-</main>
+        <section class="galeria">
+            <div class="g-item01">
+                <img src="corte02.png">
+            </div>        
+            <div class="g-item01 highlight">
+                <img src="corte01.png">
+            </div>
+            <div class="g-item01">
+                <img src="corte03.png">
+            </div>     
+        </section>
+    </main>
 </body>
